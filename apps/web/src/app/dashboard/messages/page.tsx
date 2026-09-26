@@ -7,6 +7,7 @@ import { Search, Send, User, Loader2, MessageSquare, ShieldCheck, MoreVertical }
 import { api } from "@/lib/api-client";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export default function UnifiedMessagingPage() {
   const [conversations, setConversations] = useState<any[]>([]);

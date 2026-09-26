@@ -3,6 +3,7 @@
 import { use, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { ShieldCheck, MessageSquare, Star, Clock, Globe, Loader2, DollarSign, UserCheck, TrendingUp, CheckCircle2 } from "lucide-react";
 import { api } from "@/lib/api-client";
 import { cn } from "@/lib/utils";

@@ -6,7 +6,7 @@ import { DashboardHeader } from "@/components/dashboard/header";
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Loader2, Menu as MenuIcon, X } from "lucide-react";
+import { AlertCircle, Loader2, Menu as MenuIcon, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useUser } from "@/context/user-context";
 

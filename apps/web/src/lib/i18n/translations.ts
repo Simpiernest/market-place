@@ -625,10 +625,6 @@ export const translations = {
         search_placeholder: "Buscar guías y artículos...",
         categories: "Categorías"
     },
-    footer: {
-        tagline: "La plataforma institucional para adquisiciones de activos digitales.",
-        rights: "Todos los derechos reservados.",
-    }
   },
   ar: {
     common: {
@@ -838,10 +834,6 @@ export const translations = {
         search_placeholder: "بحث في الأدلة والمقالات...",
         categories: "الفئات"
     },
-    footer: {
-        tagline: "المنصة المؤسسية لاستحواذات الأصول الرقمية.",
-        rights: "جميع الحقوق محفوظة.",
-    }
   },
   de: {
     common: {

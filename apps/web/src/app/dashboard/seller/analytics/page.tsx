@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { api } from "@/lib/api-client";
+import { cn } from "@/lib/utils";
 
 export default function SellerAnalyticsPage() {
   const [stats, setStats] = useState<any>(null);

@@ -34,7 +34,8 @@ import {
   DollarSign,
   MessageSquare,
   Loader2,
-  AlertTriangle
+  AlertTriangle,
+  Heart
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";

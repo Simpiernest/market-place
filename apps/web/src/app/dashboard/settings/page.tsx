@@ -244,7 +244,7 @@ export default function SettingsPage() {
             <div className="pt-6 mt-6 border-t border-slate-200">
                <button
                 className="w-full flex items-center gap-3 px-5 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest text-destructive hover:bg-destructive/5 transition-all"
-                onClick={() => { api.post("/auth/logout").then(() => window.location.href = "/login") }}
+                onClick={() => { api.post("/auth/logout", {}).then(() => window.location.href = "/login") }}
                >
                   <LogOut className="w-4 h-4" />
                   {t("common.logout")}

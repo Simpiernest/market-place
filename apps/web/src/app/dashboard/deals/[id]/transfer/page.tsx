@@ -88,7 +88,7 @@ export default function TransferCenterPage() {
                                     variant="ghost"
                                     size="sm"
                                     className="font-bold text-xs uppercase tracking-tighter text-accent"
-                                    onClick={() => api.post(`/deals/transfers/${asset.id}/verify`).then(() => window.location.reload())}
+                                    onClick={() => api.post(`/deals/transfers/${asset.id}/verify`, {}).then(() => window.location.reload())}
                                 >Verify</Button>
                              )}
                           </div>

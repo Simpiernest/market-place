@@ -68,7 +68,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <UserContext.Provider value={{ user, isLoading, refreshUser: fetchUser, logout }}>
+    <UserContext.Provider value={{ user, isLoading, error, refreshUser: fetchUser, logout }}>
       {children}
     </UserContext.Provider>
   );

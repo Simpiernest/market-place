@@ -31,7 +31,9 @@ import {
   Trash2,
   Heart,
   Loader2,
-  AlertTriangle
+  AlertTriangle,
+  DollarSign,
+  MessageSquare
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";

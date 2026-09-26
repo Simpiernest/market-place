@@ -1,0 +1,17 @@
+- [x] Payout Model and Request System
+    - [x] Add Payout model to domain.py
+    - [x] Implement POST /payouts/request endpoint
+- [x] BOLA / Authorization Fixes
+    - [x] Secure get_listing by slug
+    - [x] Secure get_listing by ID
+- [x] Race Condition Protection
+    - [x] Atomic Buy Now offer acceptance
+- [x] Storage & File Security
+    - [x] Pre-read validation for large files
+- [x] AI Tool Security
+    - [x] Re-authorization for AI tools
+- [x] UI Mobile Responsiveness
+    - [x] Responsive Dashboard Layout
+    - [x] Sidebar Drawer for Mobile
+    - [x] Responsive Grid/Tables in Seller Dashboard
+    - [x] Responsive Grid/Tables in Buyer Dashboard

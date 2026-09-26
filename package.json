@@ -1,0 +1,35 @@
+{
+  "name": "business-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Global online business acquisition marketplace",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "test": "turbo run test",
+    "test:e2e": "playwright test",
+    "security-audit": "cd apps/api && $env:ENVIRONMENT='test'; pytest tests/security",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.20.2",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "turbo": "^2.10.12",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "npm@10.9.2",
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=10.0.0"
+  }
+}

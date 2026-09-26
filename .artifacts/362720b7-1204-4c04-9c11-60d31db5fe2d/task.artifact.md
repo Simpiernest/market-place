@@ -1,0 +1,9 @@
+- `[x]` Buyer Qualification Workflow
+    - `[x]` Create `apps/web/src/app/dashboard/buyer/qualification/page.tsx`
+    - `[x]` Wire UI to `VerificationCase` backend endpoints
+- `[x]` Post-Transaction Review System
+    - `[x]` Create `apps/web/src/app/dashboard/deals/[id]/reviews/page.tsx`
+    - `[x]` Add "Submit Review" button to Deal Room (when COMPLETED)
+- `[x]` Final V1.5 Accuracy Check
+    - `[x]` Audit all V1.5 components for spec compliance
+    - `[x]` Update `PROJECT_STATUS.md`

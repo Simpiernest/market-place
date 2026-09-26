@@ -1,6 +1,13 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { api } from "@/lib/api-client";
 import { useEffect, useState } from "react";
+import { AlertCircle, CheckCircle2, Loader2, PlusCircle, X } from "lucide-react";
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 export default function CompareBusinessesPage() {
   const [listings, setListings] = useState<any[]>([]);

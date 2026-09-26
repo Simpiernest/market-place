@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -21,7 +21,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
 import { api } from "@/lib/api-client";
 
 export default function BuyerMandatePage() {
@@ -143,8 +142,8 @@ export default function BuyerMandatePage() {
                       type="number"
                       placeholder="0.00"
                       className="pl-9"
-                      value={mandate.minRevenue}
-                      onChange={(e) => setMandate({...mandate, minRevenue: e.target.value})}
+                      value={mandate.min_revenue}
+                      onChange={(e) => setMandate({...mandate, min_revenue: e.target.value})}
                     />
                   </div>
                 </div>
@@ -156,8 +155,8 @@ export default function BuyerMandatePage() {
                       type="number"
                       placeholder="0.00"
                       className="pl-9"
-                      value={mandate.minProfit}
-                      onChange={(e) => setMandate({...mandate, minProfit: e.target.value})}
+                      value={mandate.min_profit}
+                      onChange={(e) => setMandate({...mandate, min_profit: e.target.value})}
                     />
                   </div>
                 </div>
@@ -170,8 +169,8 @@ export default function BuyerMandatePage() {
                   <Input
                     type="number"
                     placeholder="Min ($)"
-                    value={mandate.budgetMin}
-                    onChange={(e) => setMandate({...mandate, budgetMin: e.target.value})}
+                    value={mandate.budget_min}
+                    onChange={(e) => setMandate({...mandate, budget_min: e.target.value})}
                   />
                 </div>
                 <div className="space-y-2">
@@ -179,8 +178,8 @@ export default function BuyerMandatePage() {
                   <Input
                     type="number"
                     placeholder="Max ($)"
-                    value={mandate.budgetMax}
-                    onChange={(e) => setMandate({...mandate, budgetMax: e.target.value})}
+                    value={mandate.budget_max}
+                    onChange={(e) => setMandate({...mandate, budget_max: e.target.value})}
                   />
                 </div>
               </div>
@@ -201,7 +200,7 @@ export default function BuyerMandatePage() {
                 size="lg"
                 className="px-12 bg-accent hover:bg-accent/90 border-none text-white"
                 onClick={handleSave}
-                loading={isSaving}
+                disabled={isSaving}
               >
                 Save & Activate Mandate
               </Button>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -15,12 +15,13 @@ import {
   Filter,
   History,
   TrendingUp,
-  LayoutGrid
+  LayoutGrid,
+  Loader2
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { api } from "@/lib/api-client";
-import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function InstitutionalPortalPage() {
   const [activeView, setActiveTab] = useState("portfolio");

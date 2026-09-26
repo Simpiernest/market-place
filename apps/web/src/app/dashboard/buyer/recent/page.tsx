@@ -1,6 +1,11 @@
+"use client";
+
 import { api } from "@/lib/api-client";
 import { useEffect, useState } from "react";
-import { Loader2 } from "lucide-react";
+import { History, Loader2, Trash2 } from "lucide-react";
+import Link from "next/link";
+import { ListingCard } from "@/components/marketplace/listing-card";
+import { Button } from "@/components/ui/button";
 
 export default function RecentlyViewedPage() {
   const [recent, setRecent] = useState<any[]>([]);

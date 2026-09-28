@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { ListingCard } from "@/components/marketplace/listing-card";
 import { MarketplaceFilters } from "@/components/marketplace/filters";
@@ -13,6 +13,24 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "@/hooks/use-translation";
 
 export default function MarketplacePage() {
+  return (
+    <Suspense fallback={<MarketplaceLoadingFallback />}>
+      <MarketplaceContent />
+    </Suspense>
+  );
+}
+
+function MarketplaceLoadingFallback() {
+  return (
+    <div className="container py-12">
+      <div className="h-96 flex items-center justify-center">
+        <Loader2 className="w-8 h-8 animate-spin text-accent" />
+      </div>
+    </div>
+  );
+}
+
+function MarketplaceContent() {
   const { t } = useTranslation();
   const searchParams = useSearchParams();
   const [listings, setListings] = useState<any[]>([]);
